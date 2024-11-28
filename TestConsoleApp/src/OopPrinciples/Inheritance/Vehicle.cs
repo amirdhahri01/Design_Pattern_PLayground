@@ -3,24 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TestConsoleApp.src.OopPrinciples.Abstraction{
-    public class EmailService
+namespace TestConsoleApp.src.OopPrinciples.Inheritance{
+    public class Vehicle
     {
-        public void ASendEmail(){
-            Connect();
-            Authenticate();
-            System.Console.WriteLine("Sending email...");
-            Disconnect();
+        public string Brand { get; set; }
+        public string Model{ get; set; }
+        public string Year{ get; set; }
+
+
+        public void start(){
+            System.Console.WriteLine("Vehicle is starting...");
         }
-        private void Connect(){
-            System.Console.WriteLine("Connecting to email server...");
+        public void stop(){
+            System.Console.WriteLine("Vehicle is stopping...");
         }
-        private void Authenticate(){
-            System.Console.WriteLine("Authenticating...");
-        }
-        private void Disconnect(){
-            System.Console.WriteLine("Disconnecting from email server...");
-        }
-        
     }
 }

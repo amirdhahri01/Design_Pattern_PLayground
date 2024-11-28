@@ -7,3 +7,8 @@
 // EmailService emailService = new EmailService();
 // emailService.SendEmail();
 
+using TestConsoleApp.src.OopPrinciples.Inheritance;
+Car c = new Car();
+
+c.start();
+c.stop();
