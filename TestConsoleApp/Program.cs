@@ -8,7 +8,10 @@
 // emailService.SendEmail();
 
 using TestConsoleApp.src.OopPrinciples.Inheritance;
-Car c = new Car();
 
-c.start();
-c.stop();
+List<Vehicle> vehicles = new List<Vehicle>();
+vehicles.Add(new Car{Brand = "Toyota",Model = "Camry",Year = 2028,numberOfDoors = 4,numberOfWheels = 4});
+vehicles.Add(new Bike{Brand = "Toyota",Model = "Camry",Year = 2016,numberOfDoors = 4,numberOfWheels = 4});
+foreach(var vehicle in vehicles){
+   vehicle.start();
+}

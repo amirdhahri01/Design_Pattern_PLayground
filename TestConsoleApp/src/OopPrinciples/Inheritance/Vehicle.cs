@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 namespace TestConsoleApp.src.OopPrinciples.Inheritance{
     public class Vehicle
     {
-        public string Brand { get; set; }
+        public string Brand{ get; set; }
         public string Model{ get; set; }
-        public string Year{ get; set; }
-
-
-        public void start(){
+        public int Year{ get; set; }
+        public virtual void start(){
             System.Console.WriteLine("Vehicle is starting...");
         }
-        public void stop(){
+        public virtual void stop(){
             System.Console.WriteLine("Vehicle is stopping...");
         }
     }

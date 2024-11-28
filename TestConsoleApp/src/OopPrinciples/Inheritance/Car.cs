@@ -8,5 +8,11 @@ namespace TestConsoleApp.src.OopPrinciples.Inheritance{
     {
         public int numberOfDoors{get; set;}
         public int numberOfWheels{get; set;}
+        public override void start(){
+            System.Console.WriteLine("Car is starting...");
+        }
+        public override void stop(){
+            System.Console.WriteLine("Car is stopping...");
+        }
     }
 }
