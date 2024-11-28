@@ -7,11 +7,13 @@
 // EmailService emailService = new EmailService();
 // emailService.SendEmail();
 
-using TestConsoleApp.src.OopPrinciples.Inheritance;
+// using TestConsoleApp.src.OopPrinciples.Polymorphism;
 
-List<Vehicle> vehicles = new List<Vehicle>();
-vehicles.Add(new Car{Brand = "Toyota",Model = "Camry",Year = 2028,numberOfDoors = 4,numberOfWheels = 4});
-vehicles.Add(new Bike{Brand = "Toyota",Model = "Camry",Year = 2016,numberOfDoors = 4,numberOfWheels = 4});
-foreach(var vehicle in vehicles){
-   vehicle.start();
-}
+// List<Vehicle> vehicles = new List<Vehicle>();
+// vehicles.Add(new Car{Brand = "Toyota",Model = "Camry",Year = 2028,numberOfDoors = 4,numberOfWheels = 4});
+// vehicles.Add(new Bike{Brand = "Toyota",Model = "Camry",Year = 2016,numberOfDoors = 4,numberOfWheels = 4});
+// Car c = new Car{Brand = "Toyota",Model = "Camry",Year = 2028,numberOfDoors = 4,numberOfWheels = 4};
+// c.start();
+// foreach(var vehicle in vehicles){
+//    vehicle.start();
+// }
