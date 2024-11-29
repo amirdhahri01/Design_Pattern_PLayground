@@ -22,7 +22,7 @@ namespace TestConsoleApp.src.SOLID.O{
             // }
 
         //}
-        public double CalculateArea();
+        public abstract double CalculateArea();
     }
 
 }
