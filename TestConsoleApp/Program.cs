@@ -35,13 +35,16 @@
 // System.Console.WriteLine($"Area of the rectangle {rectangle.Area}");
 // Shape square = new Square{SideLength = 6};
 // System.Console.WriteLine($"Area of the square {square.Area}");
-using TestConsoleApp.src.SOLID.I;
-
-var circle = new Circle();
-circle.Radius = 10;
-System.Console.WriteLine(circle.Area());
-var sphere = new Sphere();
-sphere.Radius = 10;
-System.Console.WriteLine(sphere.Area());
-System.Console.WriteLine(sphere.Volume());
+// using TestConsoleApp.src.SOLID.I;
+// var circle = new Circle();
+// circle.Radius = 10;
+// System.Console.WriteLine(circle.Area());
+// var sphere = new Sphere();
+// sphere.Radius = 10;
+// System.Console.WriteLine(sphere.Area());
+// System.Console.WriteLine(sphere.Volume());
  
+ using TestConsoleApp.src.SOLID.D;
+
+ var car = new Car();
+ car.StartCar();
