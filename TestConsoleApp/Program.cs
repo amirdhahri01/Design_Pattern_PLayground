@@ -17,8 +17,11 @@
 // foreach(var vehicle in vehicles){
 //    vehicle.start();
 // }
+// using TestConsoleApp.src.OopPrinciples.Coupling;
+// Order order = new Order(new SMSSender());
+// order.placeOrder();
+ 
+using TestConsoleApp.src.OopPrinciples.Composition;
 
-using TestConsoleApp.src.OopPrinciples.Coupling;
-
-Order order = new Order(new SMSSender());
-order.placeOrder();
+Car c = new Car();
+c.StartCar();
