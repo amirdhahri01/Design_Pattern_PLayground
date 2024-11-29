@@ -35,4 +35,9 @@
 // System.Console.WriteLine($"Area of the rectangle {rectangle.Area}");
 // Shape square = new Square{SideLength = 6};
 // System.Console.WriteLine($"Area of the square {square.Area}");
-using TestConsoleApp.src.SOLID.L;
+using TestConsoleApp.src.SOLID.I;
+
+var circle = new Circle();
+circle.Radius = 10;
+System.Console.WriteLine(circle.Area());
+System.Console.WriteLine(circle.Volume());
