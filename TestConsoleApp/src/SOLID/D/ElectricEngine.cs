@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace TestConsoleApp.src.SOLID.D
 {
-    public class Engine : IEngine
+    public class ElectricEngine : IEngine
     {
         public void Start(){
-            System.Console.WriteLine("Engine Started");
+            System.Console.WriteLine("ElectricEngine Started");
         }
     }
 }

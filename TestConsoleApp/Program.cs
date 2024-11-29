@@ -43,8 +43,10 @@
 // sphere.Radius = 10;
 // System.Console.WriteLine(sphere.Area());
 // System.Console.WriteLine(sphere.Volume());
- 
- using TestConsoleApp.src.SOLID.D;
-
- var car = new Car();
- car.StartCar();
+//  using TestConsoleApp.src.SOLID.D;
+//  var electricEngine = new ElectricEngine();
+//  var engine = new Engine();
+//  var car1 = new Car(electricEngine);
+//  var car2 = new Car(engine);
+//  car1.StartCar();
+//  car2.StartCar();

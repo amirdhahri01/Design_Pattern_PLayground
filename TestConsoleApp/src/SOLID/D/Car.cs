@@ -7,9 +7,9 @@ namespace TestConsoleApp.src.SOLID.D
 {
     public class Car 
     {
-        private Engine engine;
-       public Car(){
-           engine = new Engine(); 
+        private IEngine engine;
+       public Car(IEngine engine){
+           this.engine = engine; 
        }
        public void StartCar(){
             engine.Start();
