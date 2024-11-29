@@ -4,10 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace TestConsoleApp.src.SOLID.I{
-    public interface IShape
+    public interface IShape2D
     {
         double Area();
-        double Volume();
     }
 
 }

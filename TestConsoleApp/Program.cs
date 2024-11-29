@@ -40,4 +40,8 @@ using TestConsoleApp.src.SOLID.I;
 var circle = new Circle();
 circle.Radius = 10;
 System.Console.WriteLine(circle.Area());
-System.Console.WriteLine(circle.Volume());
+var sphere = new Sphere();
+sphere.Radius = 10;
+System.Console.WriteLine(sphere.Area());
+System.Console.WriteLine(sphere.Volume());
+ 

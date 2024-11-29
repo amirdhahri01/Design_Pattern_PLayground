@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace TestConsoleApp.src.SOLID.I
 {
-    public class Sphere : IShape
+    public class Sphere : IShape3D
     {
         public double Radius{get;set;}
         public double Area()
