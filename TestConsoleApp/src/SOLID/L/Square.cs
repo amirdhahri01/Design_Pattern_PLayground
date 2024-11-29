@@ -4,16 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace TestConsoleApp.src.SOLID.L{
-    public class Square:Rectangle
+    public class Square:Shape
     {
-        public override double width{
-            get => base.width;
-            set => base.width = base.height = value;
-        }
-        public override double height{
-            get => base.height;
-            set => base.height = base.width = value;
-        }
+        public double SideLength{get;set;}
+         
+        public override double Area => SideLength * SideLength;
     }
 
 }

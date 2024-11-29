@@ -26,10 +26,13 @@
 // user.Email = "AmirDhahri1@gmail.com";
 // UserService userService = new UserService();
 // userService.Register(user);
-
+// var rec = new Square();
+// rec.SideLength = 10;
+//rec.height = 5;
+// System.Console.WriteLine("Expect area to be 100");
+// System.Console.WriteLine("Actual area = " + rec.Area);
+// Shape rectangle = new Rectangle{width=5 , height=10};
+// System.Console.WriteLine($"Area of the rectangle {rectangle.Area}");
+// Shape square = new Square{SideLength = 6};
+// System.Console.WriteLine($"Area of the square {square.Area}");
 using TestConsoleApp.src.SOLID.L;
-var rec = new Rectangle();
-rec.width = 10;
-rec.height = 5;
-System.Console.WriteLine("Expect area to be 50");
-System.Console.WriteLine("Actual area = " + rec.Area);
