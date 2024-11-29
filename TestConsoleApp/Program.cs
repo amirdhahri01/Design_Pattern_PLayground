@@ -21,10 +21,15 @@
 // using TestConsoleApp.src.OopPrinciples.Composition;
 // Car c = new Car();
 // c.StartCar();
-
 // using TestConsoleApp.src.SOLID.S;
-
 // User user = new User();
 // user.Email = "AmirDhahri1@gmail.com";
 // UserService userService = new UserService();
 // userService.Register(user);
+
+using TestConsoleApp.src.SOLID.L;
+var rec = new Rectangle();
+rec.width = 10;
+rec.height = 5;
+System.Console.WriteLine("Expect area to be 50");
+System.Console.WriteLine("Actual area = " + rec.Area);

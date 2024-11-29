@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace TestConsoleApp.src.SOLID.L{
-    public abstract class Rectangle:Shape
+    public class Rectangle:Shape
     {
         public virtual double width{get;set;}
         public virtual double height{get;set;}
