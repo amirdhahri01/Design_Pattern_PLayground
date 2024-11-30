@@ -66,13 +66,21 @@
 // System.Console.WriteLine("Content : " + editor.Content);
 // System.Console.WriteLine("|||||||||||||||||-||||||||||||||||||");
 // history.ShowHistory();
+// var doc = new Document();
+// doc.State = DocumentStates.Moderation;
+// doc.CurrentUserRole = UserRoles.Admin;
+// System.Console.WriteLine(doc.State);
+// doc.Publish();
+// System.Console.WriteLine(doc.State);
+using TestConsoleApp.src.DesignPatterns.Behavioral.State.GoodSolution;
+Document doc = new Document(UserRoles.Admin);
+System.Console.WriteLine(doc._state);    
 
-
-using TestConsoleApp.src.DesignPatterns.Behavioral.State;
-
-var doc = new Document();
-doc.State = DocumentStates.Moderation;
-doc.CurrentUserRole = UserRoles.Admin;
-System.Console.WriteLine(doc.State);
 doc.Publish();
-System.Console.WriteLine(doc.State);
+System.Console.WriteLine(doc._state);    
+
+doc.Publish();
+System.Console.WriteLine(doc._state);    
+
+// Document doc = new Document(UserRoles.Admin);
+// System.Console.WriteLine(doc.State);    
