@@ -81,3 +81,8 @@
 // System.Console.WriteLine(doc._state);    
 // Document doc = new Document(UserRoles.Admin);
 // System.Console.WriteLine(doc.State);    
+ using TestConsoleApp.src.DesignPatterns.Behavioral.Strategy.GoodExample;
+
+VideoStorage vs = new VideoStorage(new CompressorMOV() , new OverlayBlur());
+vs.Store("myVideo");
+
