@@ -72,15 +72,12 @@
 // System.Console.WriteLine(doc.State);
 // doc.Publish();
 // System.Console.WriteLine(doc.State);
-using TestConsoleApp.src.DesignPatterns.Behavioral.State.GoodSolution;
-Document doc = new Document(UserRoles.Admin);
-System.Console.WriteLine(doc._state);    
-
-doc.Publish();
-System.Console.WriteLine(doc._state);    
-
-doc.Publish();
-System.Console.WriteLine(doc._state);    
-
+// using TestConsoleApp.src.DesignPatterns.Behavioral.State.GoodSolution;
+// Document doc = new Document(UserRoles.Editor);
+// System.Console.WriteLine(doc._state);    
+// doc.Publish();
+// System.Console.WriteLine(doc._state);    
+// doc.Publish();
+// System.Console.WriteLine(doc._state);    
 // Document doc = new Document(UserRoles.Admin);
 // System.Console.WriteLine(doc.State);    
