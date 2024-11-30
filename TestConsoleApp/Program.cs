@@ -81,8 +81,18 @@
 // System.Console.WriteLine(doc._state);    
 // Document doc = new Document(UserRoles.Admin);
 // System.Console.WriteLine(doc.State);    
- using TestConsoleApp.src.DesignPatterns.Behavioral.Strategy.GoodExample;
+//  using TestConsoleApp.src.DesignPatterns.Behavioral.Strategy.GoodExample;
+// VideoStorage vs = new VideoStorage(new CompressorMOV() , new OverlayBlur());
+// vs.Store("myVideo");
+using TestConsoleApp.src.DesignPatterns.Behavioral.Iterator;
 
-VideoStorage vs = new VideoStorage(new CompressorMOV() , new OverlayBlur());
-vs.Store("myVideo");
+ShoppingList shoppingList = new ShoppingList();
 
+shoppingList.Add("Milk");
+shoppingList.Add("Bread");
+shoppingList.Add("Steak");
+int count = shoppingList.GetList().Count;
+for(int i = 0 ;i < count ; i++){
+    var item = shoppingList.GetList()[i];
+    System.Console.WriteLine(item);
+}
