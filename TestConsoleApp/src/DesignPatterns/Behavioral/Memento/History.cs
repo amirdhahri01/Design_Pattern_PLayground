@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TestConsoleApp.src.DesignPatterns.Behavioral{
+namespace TestConsoleApp.src.DesignPatterns.Behavioral.Memento{
     public class History
     {
        private List<EditorState> _states = new List<EditorState>();
        private Editor _editor;
 
-       private History(Editor _editor){
+       public History(Editor _editor){
         this._editor = _editor;
        }
 
        public void Backup(){
-        _states.add(_editor.CreateState())
+        _states.Add(_editor.CreateState());
        }
 
        public void Undo(){
