@@ -50,19 +50,29 @@
 //  var car2 = new Car(engine);
 //  car1.StartCar();
 //  car2.StartCar();
-using TestConsoleApp.src.DesignPatterns.Behavioral.Memento;
-var editor = new Editor();
-var history = new History(editor);
-history.Backup();
-editor.Title = "test";
-history.Backup();
-editor.Content = "Hello there, my name is Amir Dhahri";
-history.Backup();
-editor.Title = "The life of a dev : my mementos";
-System.Console.WriteLine("Title : " + editor.Title);
-System.Console.WriteLine("Content : " + editor.Content);
-history.Undo();
-System.Console.WriteLine("Title : " + editor.Title);
-System.Console.WriteLine("Content : " + editor.Content);
-System.Console.WriteLine("|||||||||||||||||-||||||||||||||||||");
-history.ShowHistory();
+// using TestConsoleApp.src.DesignPatterns.Behavioral.Memento;
+// var editor = new Editor();
+// var history = new History(editor);
+// history.Backup();
+// editor.Title = "test";
+// history.Backup();
+// editor.Content = "Hello there, my name is Amir Dhahri";
+// history.Backup();
+// editor.Title = "The life of a dev : my mementos";
+// System.Console.WriteLine("Title : " + editor.Title);
+// System.Console.WriteLine("Content : " + editor.Content);
+// history.Undo();
+// System.Console.WriteLine("Title : " + editor.Title);
+// System.Console.WriteLine("Content : " + editor.Content);
+// System.Console.WriteLine("|||||||||||||||||-||||||||||||||||||");
+// history.ShowHistory();
+
+
+using TestConsoleApp.src.DesignPatterns.Behavioral.State;
+
+var doc = new Document();
+doc.State = DocumentStates.Moderation;
+doc.CurrentUserRole = UserRoles.Admin;
+System.Console.WriteLine(doc.State);
+doc.Publish();
+System.Console.WriteLine(doc.State);
