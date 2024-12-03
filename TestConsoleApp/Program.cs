@@ -84,7 +84,7 @@
 //  using TestConsoleApp.src.DesignPatterns.Behavioral.Strategy.GoodExample;
 // VideoStorage vs = new VideoStorage(new CompressorMOV() , new OverlayBlur());
 // vs.Store("myVideo");
-using TestConsoleApp.src.DesignPatterns.Behavioral.Iterator;
+/*using TestConsoleApp.src.DesignPatterns.Behavioral.Iterator;
 
 ShoppingList shoppingList = new ShoppingList();
 
@@ -95,4 +95,15 @@ int count = shoppingList.GetList().Count;
 for(int i = 0 ;i < count ; i++){
     var item = shoppingList.GetList()[i];
     System.Console.WriteLine(item);
-}
+}*/
+// char c = 'c';
+// Console.WriteLine(c);
+
+// class Program{
+//     public static void Main(string[] args){
+//        string userName = "Amir Dhahri";
+//        string phoneNumber = "94981522";
+//        string str = string.Format("Name : {0}\nPhoneNumber : {1}", userName , phoneNumber);
+//         Console.WriteLine(str);
+//     }
+// }
